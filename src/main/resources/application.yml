@@ -4,8 +4,10 @@ spring:
       client:
         registration:
           google:
-            client-id: 629206255789-bnj53tprap6n8fkhuprgmr1f7p7652ca.apps.googleusercontent.com
-            client-secret: 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
+            client-id:  ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
           github:
             client-id: fsfsfsdfsd
             client-secret: fwewgergrrgasa
+jwt:
+  secretKey: ${JWT_SECRET_KEY}
